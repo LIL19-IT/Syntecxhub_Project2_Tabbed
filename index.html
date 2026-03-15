@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tabbed Content</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+
+  <header class="page-header">
+    <div>
+      <div class="kicker">Documentation</div>
+      <h1 class="page-title">Product<br><em>Insight</em></h1>
+    </div>
+    <div class="header-aside">
+      <p>Everything you need to understand, integrate, and love our product.</p>
+    </div>
+  </header>
+
+  <div class="tab-shell">
+    <nav class="tab-nav" id="tabNav" role="tablist">
+      <button class="tab-btn active" data-tab="overview" role="tab">
+        <span class="t-icon">◈</span> Overview <span class="tab-count">4</span>
+      </button>
+      <button class="tab-btn" data-tab="info" role="tab">
+        <span class="t-icon">◉</span> Info <span class="tab-count">3</span>
+      </button>
+      <button class="tab-btn" data-tab="reviews" role="tab">
+        <span class="t-icon">◇</span> Reviews <span class="tab-count">24</span>
+      </button>
+      <button class="tab-btn" data-tab="contact" role="tab">
+        <span class="t-icon">◎</span> Contact
+      </button>
+    </nav>
+
+    <div class="tab-panels">
+
+      <div class="tab-panel active" id="panel-overview">
+        <div class="p-eyebrow">At a glance</div>
+        <h2 class="p-title">Built to scale.<br><em>Designed for people.</em></h2>
+        <p class="p-body">A platform that unifies your entire workflow — from planning and execution through to analytics and reporting. No context switching, no friction.</p>
+        <div class="stats-strip">
+          <div class="stat-cell" data-icon="⚡"><div class="stat-val">98%</div><div class="stat-lbl">Uptime SLA</div></div>
+          <div class="stat-cell" data-icon="⏱"><div class="stat-val">2.4ms</div><div class="stat-lbl">Avg Latency</div></div>
+          <div class="stat-cell" data-icon="🔌"><div class="stat-val">140+</div><div class="stat-lbl">Integrations</div></div>
+          <div class="stat-cell" data-icon="∞"><div class="stat-val">∞</div><div class="stat-lbl">API Calls</div></div>
+        </div>
+        <div class="features-2col">
+          <div class="feat"><span class="feat-dot"></span>Real-time collaboration</div>
+          <div class="feat"><span class="feat-dot"></span>End-to-end encryption</div>
+          <div class="feat"><span class="feat-dot"></span>Automated workflows</div>
+          <div class="feat"><span class="feat-dot"></span>Custom dashboards</div>
+          <div class="feat"><span class="feat-dot"></span>Role-based access control</div>
+          <div class="feat"><span class="feat-dot"></span>Full audit logging</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="panel-info">
+        <div class="p-eyebrow">Technical details</div>
+        <h2 class="p-title">Thoughtfully<br><em>engineered.</em></h2>
+        <p class="p-body">Every decision was made with developer experience and end-user clarity in mind. Here's what's under the hood.</p>
+        <div class="info-2col">
+          <div class="info-card"><div class="info-card-icon">⚡</div><div class="info-card-title">Edge-first Architecture</div><div class="info-card-text">Deployed across 38 regions. Users always hit the nearest node for sub-5ms latency.</div></div>
+          <div class="info-card"><div class="info-card-icon">🔒</div><div class="info-card-title">SOC 2 Type II</div><div class="info-card-text">Independently audited annually. GDPR, HIPAA, and CCPA compliant by default.</div></div>
+          <div class="info-card"><div class="info-card-icon">🧩</div><div class="info-card-title">SDK & REST API</div><div class="info-card-text">Libraries for TypeScript, Python, Go, and Ruby. Full OpenAPI spec included.</div></div>
+          <div class="info-card"><div class="info-card-icon">📊</div><div class="info-card-title">Built-in Observability</div><div class="info-card-text">Prometheus metrics, Grafana dashboards, and structured logs out of the box.</div></div>
+        </div>
+        <div class="timeline">
+          <div class="tl-item done">
+            <div class="tl-year">2022</div>
+            <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-body"><div class="tl-title">v1.0 — Initial Launch</div><div class="tl-text">Core API, developer dashboard, and foundational integrations.</div></div>
+          </div>
+          <div class="tl-item done">
+            <div class="tl-year">2023</div>
+            <div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-body"><div class="tl-title">v2.0 — Scale Edition</div><div class="tl-text">Edge deployment, team workspaces, SSO, and audit logs.</div></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">Q3 2025</div>
+            <div class="tl-spine"><div class="tl-dot"></div></div>
+            <div class="tl-body"><div class="tl-title">v3.0 — AI-Native</div><div class="tl-text">Intelligent features, expanded integrations, and enterprise controls.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="panel-reviews">
+        <div class="p-eyebrow">Customer feedback</div>
+        <h2 class="p-title">Loved by teams<br><em>worldwide.</em></h2>
+        <div class="rating-hero">
+          <div class="rating-number">4.8<sub>/5</sub></div>
+          <div>
+            <div class="rating-label">Based on 2,341 reviews</div>
+            <div class="stars-row"><span class="s">★</span><span class="s">★</span><span class="s">★</span><span class="s">★</span><span class="s h">★</span></div>
+            <div class="bars" id="ratingBars">
+              <div class="b-row"><div class="b-lbl">5★</div><div class="b-track"><div class="b-fill" data-w="74"></div></div><div class="b-pct">74%</div></div>
+              <div class="b-row"><div class="b-lbl">4★</div><div class="b-track"><div class="b-fill" data-w="16"></div></div><div class="b-pct">16%</div></div>
+              <div class="b-row"><div class="b-lbl">3★</div><div class="b-track"><div class="b-fill" data-w="7"></div></div><div class="b-pct">7%</div></div>
+              <div class="b-row"><div class="b-lbl">2★</div><div class="b-track"><div class="b-fill" data-w="2"></div></div><div class="b-pct">2%</div></div>
+              <div class="b-row"><div class="b-lbl">1★</div><div class="b-track"><div class="b-fill" data-w="1"></div></div><div class="b-pct">1%</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="review-list">
+          <div class="rev-card">
+            <div class="rev-head">
+              <div class="rev-who"><div class="rev-avatar" style="background:#e05c7a">M</div><div><div class="rev-name">Marcus T.</div><div class="rev-date">Dec 2024</div></div></div>
+              <div class="rev-stars"><span class="rev-star">★</span><span class="rev-star">★</span><span class="rev-star">★</span><span class="rev-star">★</span><span class="rev-star">★</span></div>
+            </div>
+            <p class="rev-text">"Completely transformed how our team operates. Latency dropped from 180ms to under 5ms overnight. Remarkable."</p>
+          </div>
+          <div class="rev-card">
+            <div class="rev-head">
+              <div class="rev-who"><div class="rev-avatar" style="background:#e8914a">S</div><div><div class="rev-name">Sofia R.</div><div class="rev-date">Nov 2024</div></div></div>
+              <div class="rev-stars"><span class="rev-star">★</span><span class="rev-star">★</span><span class="rev-star">★</span><span class="rev-star">★</span><span class="rev-star">★</span></div>
+            </div>
+            <p class="rev-text">"Best DX I've had in years. The API is intuitive, the docs are excellent, and support actually responds fast."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="panel-contact">
+        <div class="p-eyebrow">Get in touch</div>
+        <h2 class="p-title">We'd love to<br><em>hear from you.</em></h2>
+        <div class="contact-layout">
+          <div class="contact-methods">
+            <div class="c-method"><div class="c-icon">📧</div><div><div class="c-title">Email</div><div class="c-value">hello@example.com</div></div></div>
+            <div class="c-method"><div class="c-icon">💬</div><div><div class="c-title">Live Chat</div><div class="c-value">Mon–Fri, 9am–6pm EST</div></div></div>
+            <div class="c-method"><div class="c-icon">📞</div><div><div class="c-title">Phone</div><div class="c-value">+1 (800) 123-4567</div></div></div>
+            <div class="c-method"><div class="c-icon">📍</div><div><div class="c-title">Office</div><div class="c-value">340 Pine St, San Francisco</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
